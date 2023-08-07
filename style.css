@@ -18,6 +18,7 @@ header {
     padding: 2rem 4%;
     border-bottom: 1px solid #242424;
     margin-bottom: 2rem;
+    animation: fade-in 3s;
 }
 
 .nav-links {
@@ -59,6 +60,17 @@ header {
 .product-card img {
     width: 100%;
     margin-bottom: 1rem;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
